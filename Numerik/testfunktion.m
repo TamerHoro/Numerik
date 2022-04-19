@@ -1,3 +1,9 @@
-function ystrich = testfunktion(t,y)
-mu= 1;
-ystrich = -mu(y-cos(t));
+function ystrich = testfunktion(y)
+%mu= 1;
+%ystrich = -mu(y-cos(t));
+a=100;
+b=0.2;
+ystrich(1) = y(3);
+ystrich(2) = y(4);
+ystrich(3) = -2*a*y(1)+a*y(2)-b*y(3);
+ystrich(4) = a*y(1)-2*a*y(2)-b*y(4);
