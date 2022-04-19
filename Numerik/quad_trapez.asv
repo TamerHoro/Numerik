@@ -1,0 +1,9 @@
+function y = quad_trapez(f,a,b,n)
+
+h = (b-a)/n %Betrag des Teilintervalls
+qf=0;
+for i=a+h:h:b        %n+1 schritte
+    xk= (i)/2;        % 2 xk weil Trapezregel n=1 => k = n+1 = 2
+    qf =qf + f(xk)
+end
+qf = h*(qf)
